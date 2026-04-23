@@ -4,6 +4,9 @@ function tn_calc(primer, num_changed_bases) {
     if (filtered.length === 0) {
         return "Error: Primer is empty";
     }
+    if (!/^[atcg]+$/.test(filtered)) {
+        return "Error: Primer must contain only A, T, C, or G";
+    }
 
     let percent_mismatch = (num_changed_bases / filtered.length) * 100;
 
