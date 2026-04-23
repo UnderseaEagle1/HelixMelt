@@ -15,7 +15,7 @@ function tn_calc(primer, num_changed_bases) {
 
     let tn_value = 81.5 + (0.41 * percent_gc) - (675 / filtered.length) - percent_mismatch;
 
-    return `Percent GC: ${percent_gc.toFixed(2)}%\nTn Value: ${tn_value.toFixed(2)}`;
+    return `Percent GC: ${percent_gc.toFixed(2)}%\nTn: ${tn_value.toFixed(2)}°C`;
 }
 
 
